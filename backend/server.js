@@ -18,8 +18,8 @@ app.use("/api/auth", authRoutes);
 app.use("/api/routes", routeRoutes);
 
 
-app.get("/test", (req, res) => {
-  res.send("Test working");
+app.get('/', (req, res) => {
+  res.send("Bus Tracking System Backend is Live 🚀");
 });
 
 app.listen(5000, () => {
